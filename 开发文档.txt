@@ -1,0 +1,9 @@
+¡¾µÇÂ¼Ê§°Ü·µ»ØÖµ¡¿
+status:err
+code:password
+message:[ÕËºÅÃÜÂë´íÎó]
+
+¡¾µÇÂ¼³É¹¦·µ»ØÖµ¡¿
+status:ok
+code:
+message:Hello, ttitt! Access granted.

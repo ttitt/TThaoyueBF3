@@ -1,0 +1,16 @@
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3.exe
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3.pdb
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\MetroFramework.Design.dll
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\MetroFramework.dll
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\MetroFramework.Fonts.dll
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.Form1.resources
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.Properties.Resources.resources
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.csproj.GenerateResource.Cache
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.exe
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.pdb
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\Newtonsoft.Json.dll
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\Newtonsoft.Json.xml
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3Master.dll
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3.exe.config
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.Main.resources
+c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.csprojResolveAssemblyReference.cache
