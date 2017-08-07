@@ -11,6 +11,7 @@ using MetroFramework.Forms;
 using TThaoyueBF3Master;
 using Newtonsoft.Json;
 using System.IO;
+using System.Drawing.Text;
 
 namespace TThaoyueBF3
 {
@@ -40,22 +41,19 @@ namespace TThaoyueBF3
             Ram.PassWord = PassWordTextBox.Text;
             Master.SavePassWord();
             string JsonText = TTMaster.Login(UserNameTextBox.Text, PassWordTextBox.Text);
-            Dictionary<string, string> LoginStatus = new Dictionary<string, string>();
-            LoginStatus = TTMaster.Json(JsonText);
-            string status = Master.Login(LoginStatus);
-            if (status == "ok")
+            string loginStatus = TTMaster.loginJson(JsonText);
+            if (loginStatus == "ok")
             {
-                string BF3ServerHtml = TTMaster.GetBF3Server("http://bf3.axibug.com/getServerBrowser.php");
-                int ServerCount = Master.GetBF3ServerNum(BF3ServerHtml);
-                List<string> ServerName = new List<string>();
-                ServerName = Master.GetBF3ServerName(BF3ServerHtml, ServerCount);
-                foreach (var item in ServerName)
-                {
-                    log.AppendText(item);
-                }
+                Ram.serverStatus = TTMaster.ServerJson(JsonText);
+                MetroMessageBox.Show(this, "恭喜你登录成功", "TT提示");
+                Main main = new Main(this);
+                main.ShowDialog();
             }
             else
-                MessageBox.Show("登录失败");
+            {
+                MetroMessageBox.Show(this, "用户名或者账号错误", "TT提示");
+            }
+
         }
         /// <summary>
         /// 窗口加载时的事件
@@ -64,10 +62,6 @@ namespace TThaoyueBF3
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Config.SetValue("UserName", "ttitt");
-            //Config.SetValue("PassWord", "2312462");
-            //log.AppendText(Config.GetUserName("UserName"));
-            //log.AppendText(Config.GetPassWord("PassWord"));
             Ram.UserName = Config.GetUserName("UserName");
             Ram.PassWord = Config.GetPassWord("PassWord");
             Ram.SavePassWord = Config.GetSavePassWord("SavePassWord");

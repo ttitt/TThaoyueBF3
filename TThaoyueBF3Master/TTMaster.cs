@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Newtonsoft;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace TThaoyueBF3Master
 {
@@ -15,32 +17,35 @@ namespace TThaoyueBF3Master
         /// <param name="PassWord">密码</param>
         public static string Login(string UserName, string PassWord)
         {
-            string postdata = "username=" + UserName + "&password=" + PassWord + "&act=login&remember-me=remember-me";
-            //username=ttitt&password=2312462&act=login&remember-me=remember-me
-            return HTTP.Post("http://bf3.axibug.com/ajax.php", postdata, "http://bf3.axibug.com/index.php");
+            string postdata = "username=" + UserName + "&password=" + PassWord;
+            return HTTP.Post("http://1.1.1.1/TThaoyueBF3.php", postdata);
         }
         /// <summary>
         /// 处理登录Json数据
         /// </summary>
         /// <param name="json">Json</param>
         /// <returns></returns>
-        public static Dictionary<string, string> Json(string json)
+        public static string loginJson(string json)
         {
-            Newtonsoft.Json.Linq.JObject jobject = Newtonsoft.Json.Linq.JObject.Parse(json);
-            Dictionary<string, string> LoginStatus = new Dictionary<string, string>();
-            LoginStatus.Add("status", jobject["status"].ToString());
-            LoginStatus.Add("code", jobject["code"].ToString());
-            LoginStatus.Add("message", jobject["message"].ToString());
-            return LoginStatus;
+            JObject jo = JObject.Parse(json);
+            string loginStatus = jo["status"].ToString();
+            //LoginStatus.Add("serverName", jo["serverName"].ToString());
+            //LoginStatus.Add("playerCount", jo["playerCount"].ToString());
+            return loginStatus;
         }
         /// <summary>
-        /// 获取在线服务器
+        /// 处理服务器Json数据
         /// </summary>
-        /// <param name="url">获取在线服务器地址</param>
+        /// <param name="json"></param>
         /// <returns></returns>
-        public static string GetBF3Server(string url)
+        public static Dictionary<string,string> ServerJson(string json)
         {
-            return HTTP.Get(url);
+            JObject jo = JObject.Parse(json);
+            Dictionary<string, string> serverStatus = new Dictionary<string, string>();
+            serverStatus.Add("serverCount", jo["serverCount"].ToString());
+            serverStatus.Add("serverName", jo["serverName"].ToString());
+            serverStatus.Add("playerCount", jo["playerCount"].ToString());
+            return serverStatus;
         }
     }
 }

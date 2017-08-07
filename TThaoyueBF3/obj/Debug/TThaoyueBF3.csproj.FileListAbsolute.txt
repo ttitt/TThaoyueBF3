@@ -13,4 +13,4 @@ c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\De
 c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3Master.dll
 c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3.exe.config
 c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.Main.resources
-c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.csprojResolveAssemblyReference.cache
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.csprojResolveAssemblyReference.cache

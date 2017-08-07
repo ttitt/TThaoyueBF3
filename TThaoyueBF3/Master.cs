@@ -26,46 +26,48 @@ namespace TThaoyueBF3
             }
         }
         /// <summary>
-        /// 登录判断
+        /// 服务器名字处理
         /// </summary>
-        /// <param name="LoginStatus">登录状态</param>
-        /// <returns></returns>
-        public static string Login(Dictionary<string, string> LoginStatus)
+        /// <param name="serverName">要处理的服务器名字</param>
+        public static void serverName(string serverName)
         {
-            if (LoginStatus["status"] == "ok")
-                return "ok";
-            else
-                return "ng";
-        }
-        /// <summary>
-        /// 得到BF3服务器数量
-        /// </summary>
-        /// <param name="BF3ServerHtml">BF3ServerHtml</param>
-        /// <returns></returns>
-        public static int GetBF3ServerNum(string BF3ServerHtml)
-        {
-            int ServerCount = (BF3ServerHtml.Length - BF3ServerHtml.Replace("bf3Lan://", "").Length) / 9;
-            return ServerCount;
-        }
-        /// <summary>
-        /// 得到所有服务器名字
-        /// </summary>
-        /// <param name="BF3ServerHtml">BF3ServerHtml</param>
-        /// <param name="ServerCount">服务器数量</param>
-        /// <returns></returns>
-        public static List<string> GetBF3ServerName(string BF3ServerHtml,int ServerCount)
-        {
-            int StrEnd;
-            List<string> ServerName = new List<string>();
-            for (int i = 0; i < ServerCount; i++)
+            for (int i = 0; i < Convert.ToInt32(Ram.serverStatus["serverCount"]); i++)
             {
-                StrEnd =  BF3ServerHtml.IndexOf("<font face=");
-                BF3ServerHtml = BF3ServerHtml.Substring(StrEnd + 18);
-                StrEnd = BF3ServerHtml.IndexOf("</font>");
-                ServerName.Add(BF3ServerHtml.Substring(0, StrEnd));
-                BF3ServerHtml = BF3ServerHtml.Substring(StrEnd + 18);
+                int strend = serverName.IndexOf('"');
+                serverName = serverName.Substring(strend + 1);
+                strend = serverName.IndexOf('"');
+                Ram.serverName.Add(serverName.Substring(0, strend));
+                serverName = serverName.Substring(strend + 1);
             }
-            return ServerName;
+        }
+        /// <summary>
+        /// 服务器在线玩家处理
+        /// </summary>
+        /// <param name="serverPlayerCount">要处理的服务器玩家</param>
+        public static void serverPlayerCount(string serverPlayerCount)
+        {
+            for (int i = 0; i < Convert.ToInt32(Ram.serverStatus["serverCount"]); i++)
+            {
+                int strend = serverPlayerCount.IndexOf('"');
+                serverPlayerCount = serverPlayerCount.Substring(strend + 1);
+                strend = serverPlayerCount.IndexOf('"');
+                Ram.serverPlayerCount.Add(serverPlayerCount.Substring(0, strend));
+                serverPlayerCount = serverPlayerCount.Substring(strend + 1);
+            }
+        }
+        /// <summary>
+        /// 双剑合并
+        /// </summary>
+        /// <param name="one">第一把剑</param>
+        /// <param name="two">第二把剑</param>
+        public static void merge(List<string> one, List<string> two)
+        {
+            string str;
+            for (int i = 0; i < one.Count; i++)
+            {
+                str = one[i] + two[i];
+                Ram.serverList.Add(str);
+            }
         }
     }
 }

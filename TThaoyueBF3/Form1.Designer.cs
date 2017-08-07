@@ -36,7 +36,7 @@
             this.SavePassWord = new MetroFramework.Controls.MetroToggle();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.ByTTtext = new MetroFramework.Controls.MetroLink();
-            this.log = new MetroFramework.Controls.MetroTextBox();
+            this.TTmouse = new MetroFramework.Components.MetroToolTip();
             this.SuspendLayout();
             // 
             // UserNameTextBox
@@ -66,6 +66,7 @@
             this.UserNameTextBox.SelectionStart = 0;
             this.UserNameTextBox.Size = new System.Drawing.Size(124, 23);
             this.UserNameTextBox.TabIndex = 0;
+            this.TTmouse.SetToolTip(this.UserNameTextBox, "在这里输入账号");
             this.UserNameTextBox.UseSelectable = true;
             this.UserNameTextBox.WaterMark = "UserName";
             this.UserNameTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -98,6 +99,7 @@
             this.PassWordTextBox.SelectionStart = 0;
             this.PassWordTextBox.Size = new System.Drawing.Size(124, 23);
             this.PassWordTextBox.TabIndex = 1;
+            this.TTmouse.SetToolTip(this.PassWordTextBox, "在这里输入密码");
             this.PassWordTextBox.UseSelectable = true;
             this.PassWordTextBox.WaterMark = "PassWord";
             this.PassWordTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -106,11 +108,12 @@
             // CancelButton
             // 
             this.CancelButton.Image = null;
-            this.CancelButton.Location = new System.Drawing.Point(88, 213);
+            this.CancelButton.Location = new System.Drawing.Point(88, 225);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(53, 23);
             this.CancelButton.TabIndex = 2;
             this.CancelButton.Text = "Cancel";
+            this.TTmouse.SetToolTip(this.CancelButton, "退出");
             this.CancelButton.UseSelectable = true;
             this.CancelButton.UseVisualStyleBackColor = true;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
@@ -118,11 +121,12 @@
             // OKButton
             // 
             this.OKButton.Image = null;
-            this.OKButton.Location = new System.Drawing.Point(159, 213);
+            this.OKButton.Location = new System.Drawing.Point(159, 225);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(53, 23);
             this.OKButton.TabIndex = 3;
             this.OKButton.Text = "OK";
+            this.TTmouse.SetToolTip(this.OKButton, "登录");
             this.OKButton.UseSelectable = true;
             this.OKButton.UseVisualStyleBackColor = true;
             this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
@@ -136,6 +140,7 @@
             this.SavePassWord.Size = new System.Drawing.Size(50, 16);
             this.SavePassWord.TabIndex = 4;
             this.SavePassWord.Text = "Off";
+            this.TTmouse.SetToolTip(this.SavePassWord, "是否保存密码");
             this.SavePassWord.UseSelectable = true;
             this.SavePassWord.CheckedChanged += new System.EventHandler(this.SavePassWord_CheckedChanged);
             // 
@@ -155,46 +160,22 @@
             this.ByTTtext.Size = new System.Drawing.Size(57, 20);
             this.ByTTtext.TabIndex = 6;
             this.ByTTtext.Text = "By：TT";
+            this.TTmouse.SetToolTip(this.ByTTtext, "访问TT官网");
             this.ByTTtext.UseSelectable = true;
             this.ByTTtext.Click += new System.EventHandler(this.ByTTtext_Click);
             // 
-            // log
+            // TTmouse
             // 
-            // 
-            // 
-            // 
-            this.log.CustomButton.Image = null;
-            this.log.CustomButton.Location = new System.Drawing.Point(121, 2);
-            this.log.CustomButton.Name = "";
-            this.log.CustomButton.Size = new System.Drawing.Size(107, 107);
-            this.log.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.log.CustomButton.TabIndex = 1;
-            this.log.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.log.CustomButton.UseSelectable = true;
-            this.log.CustomButton.Visible = false;
-            this.log.Lines = new string[0];
-            this.log.Location = new System.Drawing.Point(34, 269);
-            this.log.MaxLength = 32767;
-            this.log.Multiline = true;
-            this.log.Name = "log";
-            this.log.PasswordChar = '\0';
-            this.log.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.log.SelectedText = "";
-            this.log.SelectionLength = 0;
-            this.log.SelectionStart = 0;
-            this.log.Size = new System.Drawing.Size(231, 112);
-            this.log.TabIndex = 7;
-            this.log.UseSelectable = true;
-            this.log.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.log.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TTmouse.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TTmouse.StyleManager = null;
+            this.TTmouse.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 404);
+            this.ClientSize = new System.Drawing.Size(300, 271);
             this.ControlBox = false;
-            this.Controls.Add(this.log);
             this.Controls.Add(this.ByTTtext);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.SavePassWord);
@@ -220,7 +201,7 @@
         private MetroFramework.Controls.MetroToggle SavePassWord;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLink ByTTtext;
-        private MetroFramework.Controls.MetroTextBox log;
+        private MetroFramework.Components.MetroToolTip TTmouse;
     }
 }
 

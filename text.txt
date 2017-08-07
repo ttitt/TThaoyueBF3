@@ -1,47 +1,21 @@
-(皓月高性能WEB服务器算法调试信息:)HaoYue DeBug: have ServerCache！HaoYue DeBug: don't need update!<tr class='server'>
-<td class='mapPlayUnderlay'><a onclick='javascript:startBF3("bf3Lan://LXdlYk1vZGUgTVAgLU9yaWdpbl9Ob0FwcEZvY3VzIC1vbmxpbmVFbnZpcm9ubWVudCBwcm9kIC1sb2dpblRva2VuIDAtMC0wLTAtMC0wIC1BdXRoVG9rZW4gMC0wLTAtMC0wLTAgLXJlcXVlc3RTdGF0ZSBTdGF0ZV9DbGFpbVJlc2VydmF0aW9uIC1yZXF1ZXN0U3RhdGVQYXJhbXMgIjxkYXRhIHB1dGluc3F1YWQ9XCJ0cnVlXCIgZ2FtZWlkPVwiMjc2NlwiIHBlcnNvbmFyZWY9XCIzMzg2NDg5NjA5NjE2MzMzXCIgbGV2ZWxtb2RlPVwibXBcIj48L2RhdGE+InwxMDEuMjAwLjE2NS4yNDh8");javascript:showGG();'><div class='mapThumb' style='background-image: url(./mapThumbs/XP1_002.jpg);'></div></a></td>
-	<td class='serverInfo'><b><p style='margin-bottom:20px' class='serverName'><font face='微软雅黑'>[皓月个人出资]全地图模式综合服  EXP*4 </font><font face='微软雅黑' color='#53FF53'><b onclick="javascript:window.open('http://axibug.com:801/hunterhelp/hunterhelp.php?Action=PT1nTXlWbWR5VjJj', 'newwindow', 'height=768, width=950, top=0,left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no')">【>>友情捐赠该服务器】</b></font></p></b>
-<p>
-	<b><p class='serverDiscr1'><font  color=#D26900 face='微软雅黑'>[皓月个人出资]全地图模式综合服，支持投票选图！</font></p></b>
-	<br>
-	<p class='serverMode'>
-	<img class='expansionPack' src='img/expansionPacks/DEFAULT.gif'><img class='expansionPack' src='img/expansionPacks/XPACK1.gif'><img class='expansionPack' src='img/expansionPacks/XPACK2.gif'><img class='expansionPack' src='img/expansionPacks/XPACK3.gif'><img class='expansionPack' src='img/expansionPacks/XPACK4.gif'><img class='expansionPack' src='img/expansionPacks/XPACK5.gif'>&nbsp; 征♂服·大菊 &middot; 阿曼湾【我李云龙这辈子只嫁给赵政委】</p>
-	</td>
-	<td class='playerCount'>63 / 64</td>
-	<td class='hardcore'><img src='img/CUSTOM.png'></td>
-	</tr><tr class='server'>
-<td class='mapPlayUnderlay'><a onclick='javascript:startBF3("bf3Lan://LXdlYk1vZGUgTVAgLU9yaWdpbl9Ob0FwcEZvY3VzIC1vbmxpbmVFbnZpcm9ubWVudCBwcm9kIC1sb2dpblRva2VuIDAtMC0wLTAtMC0wIC1BdXRoVG9rZW4gMC0wLTAtMC0wLTAgLXJlcXVlc3RTdGF0ZSBTdGF0ZV9DbGFpbVJlc2VydmF0aW9uIC1yZXF1ZXN0U3RhdGVQYXJhbXMgIjxkYXRhIHB1dGluc3F1YWQ9XCJ0cnVlXCIgZ2FtZWlkPVwiMjk3M1wiIHBlcnNvbmFyZWY9XCIzMzg2NDg5NjA5NjE2MzMzXCIgbGV2ZWxtb2RlPVwibXBcIj48L2RhdGE+InwxMDEuMjAwLjE2NS4yNDh8");javascript:showGG();'><div class='mapThumb' style='background-image: url(./mapThumbs/MP_017.jpg);'></div></a></td>
-	<td class='serverInfo'><b><p style='margin-bottom:20px' class='serverName'><font face='微软雅黑'>刀战服 - 仅允许使用军刀与电击器 </font><font face='微软雅黑' color='#53FF53'><b onclick="javascript:window.open('http://axibug.com:801/hunterhelp/hunterhelp.php?Action=PT1RZG9wWGQ1NVdhc1ZYZQ==', 'newwindow', 'height=768, width=950, top=0,left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no')">【>>友情捐赠该服务器】</b></font></p></b>
-<p>
-	<b><p class='serverDiscr1'><font  color=#D26900 face='微软雅黑'>刀战服 - 仅允许使用军刀与电击器，禁止开枪，禁止杀刚被救起来的人，禁止打烟雾弹</font></p></b>
-	<br>
-	<p class='serverMode'>
-	<img class='expansionPack' src='img/expansionPacks/DEFAULT.gif'>&nbsp; 团队撕逼 &middot; 迷之运河【咦？这个是CSGO服务器吗】</p>
-	</td>
-	<td class='playerCount'>4 / 16</td>
-	<td class='hardcore'><img src='img/CUSTOM.png'></td>
-	</tr><tr class='server'>
-<td class=''></td>
-	<td class='serverInfo'><b><center>↓ ↓ ↓ ↓ ↓ 下面是挂壁专用服务器、被禁封的账号只能玩挂壁服、你们开挂的慢慢玩吧↓ ↓ ↓ ↓</b>
-	
-	</center>
-	</td>
-	<td class='playerCount'>
-	
-	
-	</td>
-	<td class='hardcore'></td>
-	</tr><tr class='server'>
-<td class=''></td>
-	<td class='serverInfo'><center>(PS:[皓月看守所]在登陆页点[被禁账号入口]进入,若你不是挂壁又想去观光，<h7><font color='red' face='微软雅黑'><span onclick='javascript:window.open("http://axibug.com/?p=484")' >点我查看观光说明</span></font></h7>)
-	
-	</center>
-	</td>
-	<td class='playerCount'>
-	
-	
-	
-	
-	</td>
-	<td class='hardcore'></td>
-	</tr>
+{"status":"ok","serverName":{"0":"[\u7693\u6708\u4e2a\u4eba\u51fa\u8d44]\u5168\u5730\u56fe\u6a21\u5f0f\u7efc\u5408\u670d  EXP*4 ","2":"\u3010DICE SB\u3011\u8fd0\u6cb3tdm\u5faa\u73af \u7981\u6b62\u4e0a\u5854\u548c\u4f7f\u7528\u9730\u5f39\u67aa ","4":"\u5200\u6218\u670d - \u4ec5\u5141\u8bb8\u4f7f\u7528\u519b\u5200\u4e0e\u7535\u51fb\u5668 "},"playerCount":["49 \/ 64","9 \/ 32","0 \/ 16"]}
+
+ok{
+  "0": "[皓月个人出资]全地图模式综合服  EXP*4 ",
+  "2": "【DICE SB】运河tdm循环 禁止上塔和使用霰弹枪 ",
+  "4": "刀战服 - 仅允许使用军刀与电击器 "
+}[
+  "54 / 64",
+  "14 / 32",
+  "0 / 16"
+]
+
+[
+  "[皓月个人出资]全地图模式综合服  EXP*4 ",
+  "【DICE SB】运河tdm循环 禁止上塔和使用霰弹枪 ",
+  "刀战服 - 仅允许使用军刀与电击器 "
+][
+  "59 / 64",
+  "15 / 32",
+  "2 / 16"
+]
