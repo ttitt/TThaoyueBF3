@@ -104,6 +104,7 @@
             this.PassWordTextBox.WaterMark = "PassWord";
             this.PassWordTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.PassWordTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.PassWordTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PassWordTextBox_KeyDown);
             // 
             // CancelButton
             // 
@@ -174,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 271);
+            this.ClientSize = new System.Drawing.Size(300, 272);
             this.ControlBox = false;
             this.Controls.Add(this.ByTTtext);
             this.Controls.Add(this.metroLabel1);
@@ -183,6 +184,7 @@
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.PassWordTextBox);
             this.Controls.Add(this.UserNameTextBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Resizable = false;
             this.Text = "TT皓月BF3登录器";

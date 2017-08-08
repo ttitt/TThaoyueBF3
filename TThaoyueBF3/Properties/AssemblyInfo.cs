@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("TThaoyueBF3")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("这是一款皓月BF3登录器")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("TTBF3")]
 [assembly: AssemblyProduct("TThaoyueBF3")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright ©  2015-2017 TT")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

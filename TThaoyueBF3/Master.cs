@@ -56,6 +56,26 @@ namespace TThaoyueBF3
             }
         }
         /// <summary>
+        /// 加入服务器代码处理
+        /// </summary>
+        /// <param name="serverJoin">要处理的加入服务器</param>
+        public static void serverJoin(string serverJoin)
+        {
+            serverJoin = serverJoin.Replace("\r\n", "");
+            serverJoin = serverJoin.Replace("\"", "");
+            serverJoin = serverJoin.Replace("[", "");
+            serverJoin = serverJoin.Replace("]", "");
+            serverJoin = serverJoin.Replace(" ", "");
+            //serverJoin = serverJoin.Substring(2);
+            for (int i = 0; i < Convert.ToInt32(Ram.serverStatus["serverCount"]) - 1; i++)
+            {
+                int strend = serverJoin.IndexOf(",");
+                Ram.serverJoin.Add(serverJoin.Substring(0, strend));
+                serverJoin = serverJoin.Substring(strend + 1);
+            }
+            Ram.serverJoin.Add(serverJoin);
+        }
+        /// <summary>
         /// 双剑合并
         /// </summary>
         /// <param name="one">第一把剑</param>
@@ -67,6 +87,18 @@ namespace TThaoyueBF3
             {
                 str = one[i] + two[i];
                 Ram.serverList.Add(str);
+            }
+        }
+        /// <summary>
+        /// 最终结果
+        /// </summary>
+        /// <param name="serverList">服务器列表</param>
+        /// <param name="joinServer">进服代码</param>
+        public static void JoinServer(List<string> serverList, Dictionary<string, string> joinServer)
+        {
+            for (int i = 0; i < serverList.Count; i++)
+            {
+                joinServer.Add(serverList[i], Ram.serverJoin[i]);
             }
         }
     }

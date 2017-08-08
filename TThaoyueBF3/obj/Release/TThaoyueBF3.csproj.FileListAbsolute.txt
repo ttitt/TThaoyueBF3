@@ -1,0 +1,15 @@
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Release\TThaoyueBF3.exe.config
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Release\TThaoyueBF3.exe
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Release\TThaoyueBF3.pdb
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Release\MetroFramework.Design.dll
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Release\MetroFramework.dll
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Release\MetroFramework.Fonts.dll
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Release\Newtonsoft.Json.dll
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Release\TThaoyueBF3Master.dll
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Release\Newtonsoft.Json.xml
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Release\TThaoyueBF3.Form1.resources
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Release\TThaoyueBF3.Main.resources
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Release\TThaoyueBF3.Properties.Resources.resources
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Release\TThaoyueBF3.csproj.GenerateResource.Cache
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Release\TThaoyueBF3.exe
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Release\TThaoyueBF3.pdb

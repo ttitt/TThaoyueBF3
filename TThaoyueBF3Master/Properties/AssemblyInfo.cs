@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("TThaoyueBF3Master")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("TTBF3")]
 [assembly: AssemblyProduct("TThaoyueBF3Master")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright ©  2015-2017 TT")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

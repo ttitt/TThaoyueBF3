@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Forms;
-using System.Threading;
 using TThaoyueBF3Master;
 using System.Drawing.Text;
 
@@ -16,7 +10,6 @@ namespace TThaoyueBF3
 {
     public partial class Main : MetroForm
     {
-        bool tab = false;
         public Main(Form fm)
         {
             InitializeComponent();
@@ -42,7 +35,7 @@ namespace TThaoyueBF3
             //th.IsBackground = true;
             //th.Start();
             ServerListF5();
-            SetFont();
+            //SetFont();
         }
         /// <summary>
         /// 设置字体
@@ -68,6 +61,8 @@ namespace TThaoyueBF3
             Master.serverName(Ram.serverStatus["serverName"]);
             Master.serverPlayerCount(Ram.serverStatus["playerCount"]);
             Master.merge(Ram.serverName, Ram.serverPlayerCount);
+            Master.serverJoin(Ram.serverStatus["joinServer"]);
+            Master.JoinServer(Ram.serverList, Ram.joinServer);
             foreach (var item in Ram.serverList)
             {
                 ServerList.Items.Add(item);
@@ -84,9 +79,18 @@ namespace TThaoyueBF3
             Ram.serverList.Clear();
             Ram.serverName.Clear();
             Ram.serverPlayerCount.Clear();
+            Ram.joinServer.Clear();
             string jsonText = TTMaster.Login(Ram.UserName, Ram.PassWord);
-            Ram.serverStatus = TTMaster.ServerJson(jsonText);
+            try
+            {
+                Ram.serverStatus = TTMaster.ServerJson(jsonText);
+            }
+            catch
+            {
+                MetroMessageBox.Show(this, "皓月服务器炸了，刷新不出来，请稍后再试", "温馨提示");
+            }
             ServerListF5();
+            加入服务器ToolStripMenuItem.Enabled = false;
         }
         /// <summary>
         /// 加入服务器按钮被点击
@@ -95,7 +99,9 @@ namespace TThaoyueBF3
         /// <param name="e"></param>
         private void 加入服务器ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //if (tab)
+            MetroMessageBox.Show(this, "你即将进入\r\n" + ServerList.Text, "进服提示");
+            //string str = Ram.joinServer[ServerList.Text];
+            System.Diagnostics.Process.Start("\"" + Ram.joinServer[ServerList.Text] + "\"");
         }
         /// <summary>
         /// 服务器列表被选中事件
@@ -104,7 +110,30 @@ namespace TThaoyueBF3
         /// <param name="e"></param>
         private void ServerList_Click(object sender, EventArgs e)
         {
-            tab = true;
+            if (ServerList.Text != "")
+                加入服务器ToolStripMenuItem.Enabled = true;
+        }
+        /// <summary>
+        /// 双击服务器按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ServerList_DoubleClick(object sender, EventArgs e)
+        {
+            if (ServerList.Text != "")
+            {
+                ServerList_Click(sender, e);
+                加入服务器ToolStripMenuItem_Click(sender, e);
+            }
+        }
+        /// <summary>
+        /// ByTT按钮被点击
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ByTTtext_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.ttitt.net");
         }
 
         /// <summary>

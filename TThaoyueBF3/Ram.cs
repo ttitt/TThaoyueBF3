@@ -38,6 +38,14 @@ namespace TThaoyueBF3
         /// </summary>
         public static List<string> serverList = new List<string>();
         /// <summary>
+        /// 加入服务器代码
+        /// </summary>
+        public static List<string> serverJoin = new List<string>();
+        /// <summary>
+        /// 加入服务器
+        /// </summary>
+        public static Dictionary<string, string> joinServer = new Dictionary<string, string>();
+        /// <summary>
         /// 字体
         /// </summary>
         public static Font font;

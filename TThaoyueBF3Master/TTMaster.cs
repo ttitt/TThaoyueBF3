@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Newtonsoft;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
-using Newtonsoft.Json;
 
 namespace TThaoyueBF3Master
 {
@@ -18,7 +13,8 @@ namespace TThaoyueBF3Master
         public static string Login(string UserName, string PassWord)
         {
             string postdata = "username=" + UserName + "&password=" + PassWord;
-            return HTTP.Post("http://1.1.1.1/TThaoyueBF3.php", postdata);
+            return HTTP.Post("http://www.ttitt.net/api/TThaoyueBF3.php", postdata);
+            //return HTTP.Post("http://1.1.1.1/TThaoyueBF3.php", postdata);
         }
         /// <summary>
         /// 处理登录Json数据
@@ -27,6 +23,7 @@ namespace TThaoyueBF3Master
         /// <returns></returns>
         public static string loginJson(string json)
         {
+            
             JObject jo = JObject.Parse(json);
             string loginStatus = jo["status"].ToString();
             //LoginStatus.Add("serverName", jo["serverName"].ToString());
@@ -45,6 +42,7 @@ namespace TThaoyueBF3Master
             serverStatus.Add("serverCount", jo["serverCount"].ToString());
             serverStatus.Add("serverName", jo["serverName"].ToString());
             serverStatus.Add("playerCount", jo["playerCount"].ToString());
+            serverStatus.Add("joinServer", jo["joinServer"].ToString());
             return serverStatus;
         }
     }

@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Forms;
 using TThaoyueBF3Master;
-using Newtonsoft.Json;
-using System.IO;
-using System.Drawing.Text;
+using System.Windows.Forms;
 
 namespace TThaoyueBF3
 {
@@ -28,7 +19,7 @@ namespace TThaoyueBF3
         /// <param name="e"></param>
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            System.Environment.Exit(0);
+            Environment.Exit(0);
         }
         /// <summary>
         /// OK按钮被点击
@@ -41,7 +32,16 @@ namespace TThaoyueBF3
             Ram.PassWord = PassWordTextBox.Text;
             Master.SavePassWord();
             string JsonText = TTMaster.Login(UserNameTextBox.Text, PassWordTextBox.Text);
-            string loginStatus = TTMaster.loginJson(JsonText);
+            string loginStatus = "";
+            try
+            {
+                loginStatus = TTMaster.loginJson(JsonText);
+            }
+            catch
+            {
+                MetroMessageBox.Show(this, "皓月服务器无法连接，请稍后再试", "TT提示");
+                Environment.Exit(0);
+            }
             if (loginStatus == "ok")
             {
                 Ram.serverStatus = TTMaster.ServerJson(JsonText);
@@ -53,7 +53,6 @@ namespace TThaoyueBF3
             {
                 MetroMessageBox.Show(this, "用户名或者账号错误", "TT提示");
             }
-
         }
         /// <summary>
         /// 窗口加载时的事件
@@ -93,6 +92,14 @@ namespace TThaoyueBF3
         {
             System.Diagnostics.Process.Start("http://www.ttitt.net");
             //System.Diagnostics.Process.Start("bf3Lan://LXdlYk1vZGUgTVAgLU9yaWdpbl9Ob0FwcEZvY3VzIC1vbmxpbmVFbnZpcm9ubWVudCBwcm9kIC1sb2dpblRva2VuIDAtMC0wLTAtMC0wIC1BdXRoVG9rZW4gMC0wLTAtMC0wLTAgLXJlcXVlc3RTdGF0ZSBTdGF0ZV9DbGFpbVJlc2VydmF0aW9uIC1yZXF1ZXN0U3RhdGVQYXJhbXMgIjxkYXRhIHB1dGluc3F1YWQ9XCJ0cnVlXCIgZ2FtZWlkPVwiMjk3M1wiIHBlcnNvbmFyZWY9XCIzMzg2NDg5NjA5NjE2MzMzXCIgbGV2ZWxtb2RlPVwibXBcIj48L2RhdGE+InwxMDEuMjAwLjE2NS4yNDh8");
+        }
+
+        private void PassWordTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                OKButton.PerformClick();
+            }
         }
     }
 }

@@ -3,3 +3,4 @@ c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3Master\
 c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3Master\bin\Debug\Newtonsoft.Json.dll
 c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.dll
 c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.pdb
+C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.csprojResolveAssemblyReference.cache
