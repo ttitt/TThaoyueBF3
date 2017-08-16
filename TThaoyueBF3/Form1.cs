@@ -36,23 +36,24 @@ namespace TThaoyueBF3
             try
             {
                 loginStatus = TTMaster.loginJson(JsonText);
+                if (loginStatus == "ok")
+                {
+                    Ram.serverStatus = TTMaster.ServerJson(JsonText);
+                    MetroMessageBox.Show(this, "恭喜你登录成功", "TT提示");
+                    Main main = new Main(this);
+                    main.ShowDialog();
+                }
+                else
+                {
+                    MetroMessageBox.Show(this, "用户名或者账号错误", "TT提示");
+                }
             }
             catch
             {
                 MetroMessageBox.Show(this, "皓月服务器无法连接，请稍后再试", "TT提示");
-                Environment.Exit(0);
+                //Environment.Exit(0);
             }
-            if (loginStatus == "ok")
-            {
-                Ram.serverStatus = TTMaster.ServerJson(JsonText);
-                MetroMessageBox.Show(this, "恭喜你登录成功", "TT提示");
-                Main main = new Main(this);
-                main.ShowDialog();
-            }
-            else
-            {
-                MetroMessageBox.Show(this, "用户名或者账号错误", "TT提示");
-            }
+            
         }
         /// <summary>
         /// 窗口加载时的事件
@@ -70,6 +71,11 @@ namespace TThaoyueBF3
                 PassWordTextBox.Text = Ram.PassWord;
                 SavePassWord.Checked = true;
             }
+            Version ApplicationVersion = new Version(Application.ProductVersion);
+            string versionMajor = ApplicationVersion.Major.ToString();
+            string versionMinor = ApplicationVersion.Minor.ToString();
+            Ram.version = versionMajor + "." + versionMinor;
+            VersionText.Text = Ram.version;
         }
         /// <summary>
         /// 保存密码滑块发生变化的事件

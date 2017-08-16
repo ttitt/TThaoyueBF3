@@ -49,5 +49,9 @@ namespace TThaoyueBF3
         /// 字体
         /// </summary>
         public static Font font;
+        /// <summary>
+        /// 版本号
+        /// </summary>
+        public static string version;
     }
 }

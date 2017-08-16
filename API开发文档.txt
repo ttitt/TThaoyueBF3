@@ -11,8 +11,17 @@ TT皓月BF3接口
 名称：password	类型：string	描述：登录密码
 
 返回值：
-名称：status	描述：登录状态（如果返回的是失败的话，是没有下面的返回值的）
+名称：status		描述：登录状态（如果返回的是失败的话，是没有下面的返回值的）
 名称：serverCount	描述：服务器数量
 名称：serverName	描述：服务器名字
 名称：playerCount	描述：服务器在线玩家
 名称：joinServer	描述：加入服务器的协议
+名称：rank		描述：登录玩家等级图片
+名称：skill		描述：登录玩家的技巧值
+名称：kd		描述：登录玩家的KD比
+名称：spm		描述：登录玩家的每分钟得分
+名称：kpm		描述：登录玩家的每分钟杀敌
+名称：gameTime		描述：登录玩家的游戏时间
+名称：MVPweapon		描述：登录玩家的最佳武器
+名称：headShots		描述：登录玩家的最远爆头距离
+名称：killStreakBonus	描述：登录玩家的连续杀敌数

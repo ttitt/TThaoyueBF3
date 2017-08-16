@@ -43,6 +43,15 @@ namespace TThaoyueBF3Master
             serverStatus.Add("serverName", jo["serverName"].ToString());
             serverStatus.Add("playerCount", jo["playerCount"].ToString());
             serverStatus.Add("joinServer", jo["joinServer"].ToString());
+            serverStatus.Add("rank", jo["rank"].ToString());
+            serverStatus.Add("skill", jo["skill"].ToString());
+            serverStatus.Add("kd", jo["kd"].ToString());
+            serverStatus.Add("spm", jo["spm"].ToString());
+            serverStatus.Add("kpm", jo["kpm"].ToString());
+            serverStatus.Add("gameTime", jo["gameTime"].ToString());
+            serverStatus.Add("MVPweapon", jo["MVPweapon"].ToString());
+            serverStatus.Add("headShots", jo["headShots"].ToString());
+            serverStatus.Add("killStreakBonus", jo["killStreakBonus"].ToString());
             return serverStatus;
         }
     }
