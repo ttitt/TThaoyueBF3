@@ -34,7 +34,9 @@ namespace TThaoyueBF3
             //Thread th = new Thread(KA);
             //th.IsBackground = true;
             //th.Start();
+            setPlayerRank();
             ServerListF5();
+            version.Text = Ram.version;
             //SetFont();
         }
         /// <summary>
@@ -135,7 +137,22 @@ namespace TThaoyueBF3
         {
             System.Diagnostics.Process.Start("http://www.ttitt.net");
         }
-
+        /// <summary>
+        /// 设置玩家个人信息
+        /// </summary>
+        public void setPlayerRank()
+        {
+            id.Text = Ram.UserName;
+            imageRank.Load(Ram.serverStatus["rank"]);
+            kd.Text = Ram.serverStatus["kd"];
+            skill.Text = Ram.serverStatus["skill"];
+            spm.Text = Ram.serverStatus["spm"];
+            kpm.Text = Ram.serverStatus["kpm"];
+            gameTime.Text = Ram.serverStatus["gameTime"];
+            MVPweapon.Text = Ram.serverStatus["MVPweapon"];
+            headShots.Text = Ram.serverStatus["headShots"];
+            killStreakBonus.Text = Ram.serverStatus["killStreakBonus"];
+        }
         /// <summary>
         /// 心跳
         /// </summary>

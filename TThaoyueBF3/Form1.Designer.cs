@@ -37,6 +37,8 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.ByTTtext = new MetroFramework.Controls.MetroLink();
             this.TTmouse = new MetroFramework.Components.MetroToolTip();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.VersionText = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // UserNameTextBox
@@ -56,7 +58,7 @@
             this.UserNameTextBox.DisplayIcon = true;
             this.UserNameTextBox.Icon = ((System.Drawing.Image)(resources.GetObject("UserNameTextBox.Icon")));
             this.UserNameTextBox.Lines = new string[0];
-            this.UserNameTextBox.Location = new System.Drawing.Point(88, 94);
+            this.UserNameTextBox.Location = new System.Drawing.Point(88, 92);
             this.UserNameTextBox.MaxLength = 32767;
             this.UserNameTextBox.Name = "UserNameTextBox";
             this.UserNameTextBox.PasswordChar = '\0';
@@ -89,7 +91,7 @@
             this.PassWordTextBox.DisplayIcon = true;
             this.PassWordTextBox.Icon = ((System.Drawing.Image)(resources.GetObject("PassWordTextBox.Icon")));
             this.PassWordTextBox.Lines = new string[0];
-            this.PassWordTextBox.Location = new System.Drawing.Point(88, 152);
+            this.PassWordTextBox.Location = new System.Drawing.Point(88, 150);
             this.PassWordTextBox.MaxLength = 32767;
             this.PassWordTextBox.Name = "PassWordTextBox";
             this.PassWordTextBox.PasswordChar = '●';
@@ -109,7 +111,7 @@
             // CancelButton
             // 
             this.CancelButton.Image = null;
-            this.CancelButton.Location = new System.Drawing.Point(88, 225);
+            this.CancelButton.Location = new System.Drawing.Point(88, 223);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(53, 23);
             this.CancelButton.TabIndex = 2;
@@ -122,7 +124,7 @@
             // OKButton
             // 
             this.OKButton.Image = null;
-            this.OKButton.Location = new System.Drawing.Point(159, 225);
+            this.OKButton.Location = new System.Drawing.Point(159, 223);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(53, 23);
             this.OKButton.TabIndex = 3;
@@ -136,7 +138,7 @@
             // 
             this.SavePassWord.AutoSize = true;
             this.SavePassWord.DisplayStatus = false;
-            this.SavePassWord.Location = new System.Drawing.Point(144, 186);
+            this.SavePassWord.Location = new System.Drawing.Point(144, 184);
             this.SavePassWord.Name = "SavePassWord";
             this.SavePassWord.Size = new System.Drawing.Size(50, 16);
             this.SavePassWord.TabIndex = 4;
@@ -148,7 +150,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(103, 183);
+            this.metroLabel1.Location = new System.Drawing.Point(103, 181);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(36, 19);
             this.metroLabel1.TabIndex = 5;
@@ -156,7 +158,7 @@
             // 
             // ByTTtext
             // 
-            this.ByTTtext.Location = new System.Drawing.Point(220, 246);
+            this.ByTTtext.Location = new System.Drawing.Point(220, 259);
             this.ByTTtext.Name = "ByTTtext";
             this.ByTTtext.Size = new System.Drawing.Size(57, 20);
             this.ByTTtext.TabIndex = 6;
@@ -171,12 +173,34 @@
             this.TTmouse.StyleManager = null;
             this.TTmouse.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(26, 260);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel2.TabIndex = 8;
+            this.metroLabel2.Text = "Version:";
+            this.TTmouse.SetToolTip(this.metroLabel2, "当前版本号");
+            // 
+            // VersionText
+            // 
+            this.VersionText.AutoSize = true;
+            this.VersionText.Location = new System.Drawing.Point(75, 260);
+            this.VersionText.Name = "VersionText";
+            this.VersionText.Size = new System.Drawing.Size(42, 19);
+            this.VersionText.TabIndex = 9;
+            this.VersionText.Text = "labal1";
+            this.TTmouse.SetToolTip(this.VersionText, "当前版本号");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 272);
+            this.ClientSize = new System.Drawing.Size(300, 289);
             this.ControlBox = false;
+            this.Controls.Add(this.VersionText);
+            this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.ByTTtext);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.SavePassWord);
@@ -204,6 +228,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLink ByTTtext;
         private MetroFramework.Components.MetroToolTip TTmouse;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroLabel VersionText;
     }
 }
 
