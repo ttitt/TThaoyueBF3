@@ -4,3 +4,8 @@ C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3Master\
 C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.csprojResolveAssemblyReference.cache
 C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.dll
 C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.pdb
+C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Release\TThaoyueBF3Master.dll
+C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Release\TThaoyueBF3Master.pdb
+C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.csprojResolveAssemblyReference.cache
+C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.dll
+C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.pdb

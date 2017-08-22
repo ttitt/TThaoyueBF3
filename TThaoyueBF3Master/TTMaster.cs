@@ -52,6 +52,7 @@ namespace TThaoyueBF3Master
             serverStatus.Add("MVPweapon", jo["MVPweapon"].ToString());
             serverStatus.Add("headShots", jo["headShots"].ToString());
             serverStatus.Add("killStreakBonus", jo["killStreakBonus"].ToString());
+            serverStatus.Add("message", jo["message"].ToString());
             return serverStatus;
         }
     }

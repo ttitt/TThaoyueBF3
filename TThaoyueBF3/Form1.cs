@@ -33,8 +33,7 @@ namespace TThaoyueBF3
             Master.SavePassWord();
             string JsonText = TTMaster.Login(UserNameTextBox.Text, PassWordTextBox.Text);
             string loginStatus = "";
-            try
-            {
+           
                 loginStatus = TTMaster.loginJson(JsonText);
                 if (loginStatus == "ok")
                 {
@@ -47,12 +46,10 @@ namespace TThaoyueBF3
                 {
                     MetroMessageBox.Show(this, "用户名或者账号错误", "TT提示");
                 }
-            }
-            catch
-            {
+           
                 MetroMessageBox.Show(this, "皓月服务器无法连接，请稍后再试", "TT提示");
                 //Environment.Exit(0);
-            }
+            
             
         }
         /// <summary>

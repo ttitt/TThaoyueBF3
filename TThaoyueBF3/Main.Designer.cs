@@ -59,6 +59,8 @@
             this.TTmouse = new MetroFramework.Components.MetroToolTip();
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.version = new MetroFramework.Controls.MetroLabel();
+            this.message = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
             this.ServerListMenu.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageRank)).BeginInit();
@@ -342,11 +344,31 @@
             this.version.TabIndex = 5;
             this.version.Text = "0";
             // 
+            // message
+            // 
+            this.message.AutoSize = true;
+            this.message.Location = new System.Drawing.Point(192, 447);
+            this.message.Name = "message";
+            this.message.Size = new System.Drawing.Size(88, 19);
+            this.message.TabIndex = 6;
+            this.message.Text = "metroLabel12";
+            // 
+            // metroLabel12
+            // 
+            this.metroLabel12.AutoSize = true;
+            this.metroLabel12.Location = new System.Drawing.Point(133, 447);
+            this.metroLabel12.Name = "metroLabel12";
+            this.metroLabel12.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel12.TabIndex = 7;
+            this.metroLabel12.Text = "TT公告:";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 475);
+            this.Controls.Add(this.metroLabel12);
+            this.Controls.Add(this.message);
             this.Controls.Add(this.version);
             this.Controls.Add(this.metroLabel11);
             this.Controls.Add(this.metroLabel10);
@@ -400,5 +422,7 @@
         private MetroFramework.Components.MetroToolTip TTmouse;
         private MetroFramework.Controls.MetroLabel metroLabel11;
         private MetroFramework.Controls.MetroLabel version;
+        private MetroFramework.Controls.MetroLabel message;
+        private MetroFramework.Controls.MetroLabel metroLabel12;
     }
 }

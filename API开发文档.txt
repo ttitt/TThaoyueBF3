@@ -25,3 +25,4 @@ TT皓月BF3接口
 名称：MVPweapon		描述：登录玩家的最佳武器
 名称：headShots		描述：登录玩家的最远爆头距离
 名称：killStreakBonus	描述：登录玩家的连续杀敌数
+名称：message		描述：TT公告

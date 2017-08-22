@@ -35,6 +35,7 @@ namespace TThaoyueBF3
             //th.IsBackground = true;
             //th.Start();
             setPlayerRank();
+            setMessage();
             ServerListF5();
             version.Text = Ram.version;
             //SetFont();
@@ -153,6 +154,14 @@ namespace TThaoyueBF3
             headShots.Text = Ram.serverStatus["headShots"];
             killStreakBonus.Text = Ram.serverStatus["killStreakBonus"];
         }
+        /// <summary>
+        /// 登录器公告
+        /// </summary>
+        public void setMessage()
+        {
+            message.Text = Ram.serverStatus["message"];
+        }
+
         /// <summary>
         /// 心跳
         /// </summary>
