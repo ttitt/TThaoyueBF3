@@ -9,26 +9,13 @@ namespace TThaoyueBF3
     class Config
     {
         /// <summary>
-        /// 读取账号
+        /// 读取制定的配置文件
         /// </summary>
-        /// <param name="key"></param>
+        /// <param name="key">要读取的值</param>
         /// <returns></returns>
-        public static string GetUserName(string key)
+        public static string GetValue(string key)
         {
-            return ConfigurationManager.AppSettings.Get("UserName");
-        }
-        /// <summary>
-        /// 读取密码
-        /// </summary>
-        /// <param name="key"></param>
-        /// <returns></returns>
-        public static string GetPassWord(string key)
-        {
-            return ConfigurationManager.AppSettings.Get("PassWord");
-        }
-        public static string GetSavePassWord(string key)
-        {
-            return ConfigurationManager.AppSettings.Get("SavePassWord");
+            return ConfigurationManager.AppSettings.Get(key);
         }
         /// <summary>
         /// 写入配置文件

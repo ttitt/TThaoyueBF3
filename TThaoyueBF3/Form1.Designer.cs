@@ -111,7 +111,7 @@
             // CancelButton
             // 
             this.CancelButton.Image = null;
-            this.CancelButton.Location = new System.Drawing.Point(88, 223);
+            this.CancelButton.Location = new System.Drawing.Point(87, 221);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(53, 23);
             this.CancelButton.TabIndex = 2;
@@ -124,7 +124,7 @@
             // OKButton
             // 
             this.OKButton.Image = null;
-            this.OKButton.Location = new System.Drawing.Point(159, 223);
+            this.OKButton.Location = new System.Drawing.Point(159, 221);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(53, 23);
             this.OKButton.TabIndex = 3;
@@ -138,7 +138,7 @@
             // 
             this.SavePassWord.AutoSize = true;
             this.SavePassWord.DisplayStatus = false;
-            this.SavePassWord.Location = new System.Drawing.Point(144, 184);
+            this.SavePassWord.Location = new System.Drawing.Point(146, 192);
             this.SavePassWord.Name = "SavePassWord";
             this.SavePassWord.Size = new System.Drawing.Size(50, 16);
             this.SavePassWord.TabIndex = 4;
@@ -150,7 +150,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(103, 181);
+            this.metroLabel1.Location = new System.Drawing.Point(104, 190);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(36, 19);
             this.metroLabel1.TabIndex = 5;
@@ -210,6 +210,7 @@
             this.Controls.Add(this.UserNameTextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.Opacity = 0.95D;
             this.Resizable = false;
             this.Text = "TT皓月BF3登录器";
             this.Load += new System.EventHandler(this.Form1_Load);

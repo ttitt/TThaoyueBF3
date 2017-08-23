@@ -6,6 +6,5 @@ c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3Master\
 C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.csprojResolveAssemblyReference.cache
 C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Debug\TThaoyueBF3Master.dll
 C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Debug\TThaoyueBF3Master.pdb
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.csprojResolveAssemblyReference.cache
 C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.dll
 C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.pdb

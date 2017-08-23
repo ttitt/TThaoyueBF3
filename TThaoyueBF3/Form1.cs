@@ -33,24 +33,28 @@ namespace TThaoyueBF3
             Master.SavePassWord();
             string JsonText = TTMaster.Login(UserNameTextBox.Text, PassWordTextBox.Text);
             string loginStatus = "";
-           
+            try
+            {
                 loginStatus = TTMaster.loginJson(JsonText);
-                if (loginStatus == "ok")
-                {
-                    Ram.serverStatus = TTMaster.ServerJson(JsonText);
-                    MetroMessageBox.Show(this, "恭喜你登录成功", "TT提示");
-                    Main main = new Main(this);
-                    main.ShowDialog();
-                }
-                else
-                {
-                    MetroMessageBox.Show(this, "用户名或者账号错误", "TT提示");
-                }
-           
-                MetroMessageBox.Show(this, "皓月服务器无法连接，请稍后再试", "TT提示");
-                //Environment.Exit(0);
-            
-            
+            }
+            catch
+            {
+                goto TT;
+            }
+            if (loginStatus == "ok")
+            {
+                Ram.serverStatus = TTMaster.ServerJson(JsonText);
+                MetroMessageBox.Show(this, "恭喜你登录成功", "TT提示");
+                Main main = new Main(this);
+                main.ShowDialog();
+            }
+            else
+            {
+                MetroMessageBox.Show(this, "用户名或者账号错误", "TT提示");
+            }
+            TT:
+            MetroMessageBox.Show(this, "皓月服务器无法连接，请稍后再试", "TT提示");
+            //Environment.Exit(0);
         }
         /// <summary>
         /// 窗口加载时的事件
@@ -59,9 +63,11 @@ namespace TThaoyueBF3
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
-            Ram.UserName = Config.GetUserName("UserName");
-            Ram.PassWord = Config.GetPassWord("PassWord");
-            Ram.SavePassWord = Config.GetSavePassWord("SavePassWord");
+            Ram.UserName = Config.GetValue("UserName");
+            Ram.PassWord = Config.GetValue("PassWord");
+            Ram.SavePassWord = Config.GetValue("SavePassWord");
+            Ram.Theme = Config.GetValue("Theme");
+            Master.SetForm1Theme(this);
             if (Ram.SavePassWord == "true")
             {
                 UserNameTextBox.Text = Ram.UserName;
@@ -96,7 +102,11 @@ namespace TThaoyueBF3
             System.Diagnostics.Process.Start("http://www.ttitt.net");
             //System.Diagnostics.Process.Start("bf3Lan://LXdlYk1vZGUgTVAgLU9yaWdpbl9Ob0FwcEZvY3VzIC1vbmxpbmVFbnZpcm9ubWVudCBwcm9kIC1sb2dpblRva2VuIDAtMC0wLTAtMC0wIC1BdXRoVG9rZW4gMC0wLTAtMC0wLTAgLXJlcXVlc3RTdGF0ZSBTdGF0ZV9DbGFpbVJlc2VydmF0aW9uIC1yZXF1ZXN0U3RhdGVQYXJhbXMgIjxkYXRhIHB1dGluc3F1YWQ9XCJ0cnVlXCIgZ2FtZWlkPVwiMjk3M1wiIHBlcnNvbmFyZWY9XCIzMzg2NDg5NjA5NjE2MzMzXCIgbGV2ZWxtb2RlPVwibXBcIj48L2RhdGE+InwxMDEuMjAwLjE2NS4yNDh8");
         }
-
+        /// <summary>
+        /// 密码输入框按下事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PassWordTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

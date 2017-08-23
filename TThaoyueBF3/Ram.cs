@@ -53,5 +53,9 @@ namespace TThaoyueBF3
         /// 版本号
         /// </summary>
         public static string version;
+        /// <summary>
+        /// 主题
+        /// </summary>
+        public static string Theme;
     }
 }

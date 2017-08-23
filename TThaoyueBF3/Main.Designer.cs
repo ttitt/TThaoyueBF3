@@ -60,10 +60,14 @@
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.version = new MetroFramework.Controls.MetroLabel();
             this.message = new MetroFramework.Controls.MetroLabel();
+            this.Console = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ServerListMenu.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageRank)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ServerList
@@ -104,11 +108,12 @@
             // 
             // ByTTtext
             // 
-            this.ByTTtext.Location = new System.Drawing.Point(569, 443);
+            this.ByTTtext.Location = new System.Drawing.Point(569, 459);
             this.ByTTtext.Name = "ByTTtext";
             this.ByTTtext.Size = new System.Drawing.Size(75, 23);
             this.ByTTtext.TabIndex = 1;
             this.ByTTtext.Text = "By：TT";
+            this.TTmouse.SetToolTip(this.ByTTtext, "点击访问TT官网");
             this.ByTTtext.UseSelectable = true;
             this.ByTTtext.Click += new System.EventHandler(this.ByTTtext_Click);
             // 
@@ -133,7 +138,7 @@
             this.groupBox1.Controls.Add(this.imageRank);
             this.groupBox1.Controls.Add(this.id);
             this.groupBox1.Controls.Add(this.metroLabel1);
-            this.groupBox1.Location = new System.Drawing.Point(58, 304);
+            this.groupBox1.Location = new System.Drawing.Point(58, 320);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(586, 133);
             this.groupBox1.TabIndex = 2;
@@ -142,7 +147,7 @@
             // killStreakBonus
             // 
             this.killStreakBonus.AutoSize = true;
-            this.killStreakBonus.Location = new System.Drawing.Point(525, 99);
+            this.killStreakBonus.Location = new System.Drawing.Point(524, 99);
             this.killStreakBonus.Name = "killStreakBonus";
             this.killStreakBonus.Size = new System.Drawing.Size(16, 19);
             this.killStreakBonus.TabIndex = 18;
@@ -151,7 +156,7 @@
             // headShots
             // 
             this.headShots.AutoSize = true;
-            this.headShots.Location = new System.Drawing.Point(525, 60);
+            this.headShots.Location = new System.Drawing.Point(524, 60);
             this.headShots.Name = "headShots";
             this.headShots.Size = new System.Drawing.Size(16, 19);
             this.headShots.TabIndex = 17;
@@ -160,7 +165,7 @@
             // MVPweapon
             // 
             this.MVPweapon.AutoSize = true;
-            this.MVPweapon.Location = new System.Drawing.Point(525, 21);
+            this.MVPweapon.Location = new System.Drawing.Point(524, 21);
             this.MVPweapon.Name = "MVPweapon";
             this.MVPweapon.Size = new System.Drawing.Size(16, 19);
             this.MVPweapon.TabIndex = 16;
@@ -169,7 +174,7 @@
             // gameTime
             // 
             this.gameTime.AutoSize = true;
-            this.gameTime.Location = new System.Drawing.Point(348, 99);
+            this.gameTime.Location = new System.Drawing.Point(345, 99);
             this.gameTime.Name = "gameTime";
             this.gameTime.Size = new System.Drawing.Size(16, 19);
             this.gameTime.TabIndex = 15;
@@ -178,7 +183,7 @@
             // kpm
             // 
             this.kpm.AutoSize = true;
-            this.kpm.Location = new System.Drawing.Point(348, 60);
+            this.kpm.Location = new System.Drawing.Point(345, 60);
             this.kpm.Name = "kpm";
             this.kpm.Size = new System.Drawing.Size(16, 19);
             this.kpm.TabIndex = 14;
@@ -187,7 +192,7 @@
             // spm
             // 
             this.spm.AutoSize = true;
-            this.spm.Location = new System.Drawing.Point(348, 21);
+            this.spm.Location = new System.Drawing.Point(345, 21);
             this.spm.Name = "spm";
             this.spm.Size = new System.Drawing.Size(16, 19);
             this.spm.TabIndex = 13;
@@ -214,7 +219,7 @@
             // metroLabel9
             // 
             this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(420, 99);
+            this.metroLabel9.Location = new System.Drawing.Point(419, 99);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(107, 19);
             this.metroLabel9.TabIndex = 10;
@@ -223,7 +228,7 @@
             // metroLabel8
             // 
             this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(420, 60);
+            this.metroLabel8.Location = new System.Drawing.Point(419, 60);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(107, 19);
             this.metroLabel8.TabIndex = 9;
@@ -232,7 +237,7 @@
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(420, 21);
+            this.metroLabel7.Location = new System.Drawing.Point(419, 21);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(107, 19);
             this.metroLabel7.TabIndex = 8;
@@ -241,7 +246,7 @@
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(262, 99);
+            this.metroLabel6.Location = new System.Drawing.Point(259, 99);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(93, 19);
             this.metroLabel6.TabIndex = 7;
@@ -250,7 +255,7 @@
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(262, 60);
+            this.metroLabel5.Location = new System.Drawing.Point(259, 60);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(93, 19);
             this.metroLabel5.TabIndex = 6;
@@ -259,7 +264,7 @@
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(262, 21);
+            this.metroLabel4.Location = new System.Drawing.Point(259, 21);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(93, 19);
             this.metroLabel4.TabIndex = 5;
@@ -291,6 +296,7 @@
             this.imageRank.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imageRank.TabIndex = 2;
             this.imageRank.TabStop = false;
+            this.TTmouse.SetToolTip(this.imageRank, "你的等级");
             // 
             // id
             // 
@@ -329,44 +335,103 @@
             // metroLabel11
             // 
             this.metroLabel11.AutoSize = true;
-            this.metroLabel11.Location = new System.Drawing.Point(32, 447);
+            this.metroLabel11.Location = new System.Drawing.Point(32, 463);
             this.metroLabel11.Name = "metroLabel11";
             this.metroLabel11.Size = new System.Drawing.Size(54, 19);
             this.metroLabel11.TabIndex = 4;
             this.metroLabel11.Text = "Version:";
+            this.TTmouse.SetToolTip(this.metroLabel11, "当前版本号");
             // 
             // version
             // 
             this.version.AutoSize = true;
-            this.version.Location = new System.Drawing.Point(80, 447);
+            this.version.Location = new System.Drawing.Point(80, 463);
             this.version.Name = "version";
             this.version.Size = new System.Drawing.Size(16, 19);
             this.version.TabIndex = 5;
             this.version.Text = "0";
+            this.TTmouse.SetToolTip(this.version, "当前版本号");
             // 
             // message
             // 
             this.message.AutoSize = true;
-            this.message.Location = new System.Drawing.Point(192, 447);
+            this.message.Location = new System.Drawing.Point(192, 463);
             this.message.Name = "message";
             this.message.Size = new System.Drawing.Size(88, 19);
             this.message.TabIndex = 6;
             this.message.Text = "metroLabel12";
+            this.TTmouse.SetToolTip(this.message, "TT公告");
+            // 
+            // Console
+            // 
+            // 
+            // 
+            // 
+            this.Console.CustomButton.Image = null;
+            this.Console.CustomButton.Location = new System.Drawing.Point(417, 1);
+            this.Console.CustomButton.Name = "";
+            this.Console.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.Console.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.Console.CustomButton.TabIndex = 1;
+            this.Console.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Console.CustomButton.UseSelectable = true;
+            this.Console.CustomButton.Visible = false;
+            this.Console.DisplayIcon = true;
+            this.Console.Icon = ((System.Drawing.Image)(resources.GetObject("Console.Icon")));
+            this.Console.Lines = new string[0];
+            this.Console.Location = new System.Drawing.Point(167, 299);
+            this.Console.MaxLength = 32767;
+            this.Console.Name = "Console";
+            this.Console.PasswordChar = '\0';
+            this.Console.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Console.SelectedText = "";
+            this.Console.SelectionLength = 0;
+            this.Console.SelectionStart = 0;
+            this.Console.Size = new System.Drawing.Size(439, 23);
+            this.Console.TabIndex = 19;
+            this.TTmouse.SetToolTip(this.Console, "控制台");
+            this.Console.UseSelectable = true;
+            this.Console.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.Console.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.Console.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Console_KeyDown);
+            // 
+            // metroLabel13
+            // 
+            this.metroLabel13.AutoSize = true;
+            this.metroLabel13.Location = new System.Drawing.Point(78, 301);
+            this.metroLabel13.Name = "metroLabel13";
+            this.metroLabel13.Size = new System.Drawing.Size(74, 19);
+            this.metroLabel13.TabIndex = 20;
+            this.metroLabel13.Text = "TT Console";
+            this.TTmouse.SetToolTip(this.metroLabel13, "TT 控制台");
             // 
             // metroLabel12
             // 
             this.metroLabel12.AutoSize = true;
-            this.metroLabel12.Location = new System.Drawing.Point(133, 447);
+            this.metroLabel12.Location = new System.Drawing.Point(133, 463);
             this.metroLabel12.Name = "metroLabel12";
             this.metroLabel12.Size = new System.Drawing.Size(54, 19);
             this.metroLabel12.TabIndex = 7;
             this.metroLabel12.Text = "TT公告:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(556, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 475);
+            this.ClientSize = new System.Drawing.Size(694, 490);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.metroLabel13);
+            this.Controls.Add(this.Console);
             this.Controls.Add(this.metroLabel12);
             this.Controls.Add(this.message);
             this.Controls.Add(this.version);
@@ -378,6 +443,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Main";
+            this.Opacity = 0.95D;
             this.Resizable = false;
             this.Text = "TT皓月BF3登录器";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_FormClosed);
@@ -386,6 +452,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageRank)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,5 +491,8 @@
         private MetroFramework.Controls.MetroLabel version;
         private MetroFramework.Controls.MetroLabel message;
         private MetroFramework.Controls.MetroLabel metroLabel12;
+        private MetroFramework.Controls.MetroTextBox Console;
+        private MetroFramework.Controls.MetroLabel metroLabel13;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

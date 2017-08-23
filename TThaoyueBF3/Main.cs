@@ -10,7 +10,7 @@ namespace TThaoyueBF3
 {
     public partial class Main : MetroForm
     {
-        public Main(Form fm)
+        public Main(Form1 fm)
         {
             InitializeComponent();
             fm.Visible = false;
@@ -34,6 +34,7 @@ namespace TThaoyueBF3
             //Thread th = new Thread(KA);
             //th.IsBackground = true;
             //th.Start();
+            Master.SetMainTheme(this);
             setPlayerRank();
             setMessage();
             ServerListF5();
@@ -160,6 +161,19 @@ namespace TThaoyueBF3
         public void setMessage()
         {
             message.Text = Ram.serverStatus["message"];
+        }
+        /// <summary>
+        /// Console输入框按下事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Console_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Master.ConsoleCommand(Console.Text, this);
+                Console.Clear();
+            }
         }
 
         /// <summary>
