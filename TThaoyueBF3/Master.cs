@@ -98,7 +98,17 @@ namespace TThaoyueBF3
             for (int i = 0; i < serverList.Count; i++)
             {
                 if (joinServer.ContainsKey(serverList[i]))
+                {
+                    string str = serverList[i];
+                    while (true)
+                    {
+                        if (joinServer.ContainsKey(str))
+                            str = str + " ";
+                        else
+                            return;
+                    }
                     joinServer.Add(serverList[i] + " ", Ram.serverJoin[i]);
+                }
                 else
                     joinServer.Add(serverList[i], Ram.serverJoin[i]);
             }
