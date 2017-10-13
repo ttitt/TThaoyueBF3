@@ -13,7 +13,7 @@ namespace TThaoyueBF3Master
         public static string Login(string UserName, string PassWord)
         {
             string postdata = "username=" + UserName + "&password=" + PassWord;
-            return HTTP.Post("http://www.ttitt.net/api/TThaoyueBF3.php", postdata);
+            return HTTP.Post("https://www.ttitt.net/api/TThaoyueBF3.php", postdata);
             //return HTTP.Post("http://1.1.1.1/TThaoyueBF3.php", postdata);
         }
         /// <summary>
