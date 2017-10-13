@@ -419,7 +419,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(569, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(556, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -429,11 +429,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-<<<<<<< HEAD
             this.pictureBox2.Location = new System.Drawing.Point(477, 12);
-=======
-            this.pictureBox2.Location = new System.Drawing.Point(490, 12);
->>>>>>> 1d173e8ae52ca5cabd400b2540bbff74b00b0862
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 64);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

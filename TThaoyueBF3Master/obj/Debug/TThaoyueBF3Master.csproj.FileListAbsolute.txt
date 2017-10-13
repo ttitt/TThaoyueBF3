@@ -8,13 +8,9 @@ C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Debug\TThaoyueBF3Master.dl
 C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Debug\TThaoyueBF3Master.pdb
 C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.dll
 C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.pdb
-<<<<<<< HEAD
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Debug\TThaoyueBF3Master.dll
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Debug\TThaoyueBF3Master.pdb
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Debug\Newtonsoft.Json.dll
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.csprojResolveAssemblyReference.cache
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.dll
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.pdb
-=======
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.csprojResolveAssemblyReference.cache
->>>>>>> 1d173e8ae52ca5cabd400b2540bbff74b00b0862

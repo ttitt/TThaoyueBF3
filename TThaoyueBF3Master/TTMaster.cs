@@ -13,7 +13,6 @@ namespace TThaoyueBF3Master
         public static string Login(string UserName, string PassWord)
         {
             string postdata = "username=" + UserName + "&password=" + PassWord;
-<<<<<<< HEAD
             string str = HTTP.Post("http://www.ttitt.net/api/TThaoyueBF3.php", postdata);
             try
             {
@@ -26,10 +25,6 @@ namespace TThaoyueBF3Master
 
             }
             return HTTP.PostUrl("https://www.ttitt.net/api/TThaoyueBF3.php", postdata);
-=======
-            return HTTP.Post("https://www.ttitt.net/api/TThaoyueBF3.php", postdata);
-            //return HTTP.Post("http://1.1.1.1/TThaoyueBF3.php", postdata);
->>>>>>> 1d173e8ae52ca5cabd400b2540bbff74b00b0862
         }
         /// <summary>
         /// 处理登录Json数据
