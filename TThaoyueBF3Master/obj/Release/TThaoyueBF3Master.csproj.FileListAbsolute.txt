@@ -9,3 +9,9 @@ C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Release\TThaoyueBF3Master.
 C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.csprojResolveAssemblyReference.cache
 C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.dll
 C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.pdb
+D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Release\TThaoyueBF3Master.dll
+D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Release\TThaoyueBF3Master.pdb
+D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Release\Newtonsoft.Json.dll
+D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.csprojResolveAssemblyReference.cache
+D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.dll
+D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Release\TThaoyueBF3Master.pdb

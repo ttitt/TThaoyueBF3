@@ -13,8 +13,18 @@ namespace TThaoyueBF3Master
         public static string Login(string UserName, string PassWord)
         {
             string postdata = "username=" + UserName + "&password=" + PassWord;
-            return HTTP.Post("http://www.ttitt.net/api/TThaoyueBF3.php", postdata);
-            //return HTTP.Post("http://1.1.1.1/TThaoyueBF3.php", postdata);
+            string str = HTTP.Post("http://www.ttitt.net/api/TThaoyueBF3.php", postdata);
+            try
+            {
+                string status = loginJson(str);
+                if (status == "ok")
+                    return str;
+            }
+            catch
+            {
+
+            }
+            return HTTP.PostUrl("https://www.ttitt.net/api/TThaoyueBF3.php", postdata);
         }
         /// <summary>
         /// 处理登录Json数据
@@ -23,7 +33,7 @@ namespace TThaoyueBF3Master
         /// <returns></returns>
         public static string loginJson(string json)
         {
-            
+
             JObject jo = JObject.Parse(json);
             string loginStatus = jo["status"].ToString();
             //LoginStatus.Add("serverName", jo["serverName"].ToString());
@@ -35,7 +45,7 @@ namespace TThaoyueBF3Master
         /// </summary>
         /// <param name="json"></param>
         /// <returns></returns>
-        public static Dictionary<string,string> ServerJson(string json)
+        public static Dictionary<string, string> ServerJson(string json)
         {
             JObject jo = JObject.Parse(json);
             Dictionary<string, string> serverStatus = new Dictionary<string, string>();
