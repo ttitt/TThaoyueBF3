@@ -1,0 +1,15 @@
+#忽略.gitignore文件  
+#.gitignore  
+
+#忽略*.suo
+*.suo
+*.cmd
+*.log
+
+#忽略obj、Debug、Release目录下所有文件
+obj/
+Debug/
+Release/
+.vs/
+#忽略文件
+#ReadMe.txt

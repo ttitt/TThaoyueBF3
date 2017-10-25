@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
+using System.Collections;
 
 namespace TThaoyueBF3Master
 {
@@ -49,20 +50,25 @@ namespace TThaoyueBF3Master
         {
             JObject jo = JObject.Parse(json);
             Dictionary<string, string> serverStatus = new Dictionary<string, string>();
-            serverStatus.Add("serverCount", jo["serverCount"].ToString());
-            serverStatus.Add("serverName", jo["serverName"].ToString());
-            serverStatus.Add("playerCount", jo["playerCount"].ToString());
-            serverStatus.Add("joinServer", jo["joinServer"].ToString());
-            serverStatus.Add("rank", jo["rank"].ToString());
-            serverStatus.Add("skill", jo["skill"].ToString());
-            serverStatus.Add("kd", jo["kd"].ToString());
-            serverStatus.Add("spm", jo["spm"].ToString());
-            serverStatus.Add("kpm", jo["kpm"].ToString());
-            serverStatus.Add("gameTime", jo["gameTime"].ToString());
-            serverStatus.Add("MVPweapon", jo["MVPweapon"].ToString());
-            serverStatus.Add("headShots", jo["headShots"].ToString());
-            serverStatus.Add("killStreakBonus", jo["killStreakBonus"].ToString());
-            serverStatus.Add("message", jo["message"].ToString());
+            IEnumerable<JProperty> jsonarray = jo.Properties();
+            foreach (var item in jsonarray)
+            {
+                serverStatus.Add(item.Name, jo[item.Name].ToString());
+            }
+            //serverStatus.Add("serverCount", jo["serverCount"].ToString());
+            //serverStatus.Add("serverName", jo["serverName"].ToString());
+            //serverStatus.Add("playerCount", jo["playerCount"].ToString());
+            //serverStatus.Add("joinServer", jo["joinServer"].ToString());
+            //serverStatus.Add("rank", jo["rank"].ToString());
+            //serverStatus.Add("skill", jo["skill"].ToString());
+            //serverStatus.Add("kd", jo["kd"].ToString());
+            //serverStatus.Add("spm", jo["spm"].ToString());
+            //serverStatus.Add("kpm", jo["kpm"].ToString());
+            //serverStatus.Add("gameTime", jo["gameTime"].ToString());
+            //serverStatus.Add("MVPweapon", jo["MVPweapon"].ToString());
+            //serverStatus.Add("headShots", jo["headShots"].ToString());
+            //serverStatus.Add("killStreakBonus", jo["killStreakBonus"].ToString());
+            //serverStatus.Add("message", jo["message"].ToString());
             return serverStatus;
         }
     }

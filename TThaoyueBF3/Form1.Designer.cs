@@ -223,7 +223,9 @@
 
         private MetroFramework.Controls.MetroTextBox UserNameTextBox;
         private MetroFramework.Controls.MetroTextBox PassWordTextBox;
+#pragma warning disable CS0108 // “Form1.CancelButton”隐藏继承的成员“Form.CancelButton”。如果是有意隐藏，请使用关键字 new。
         private MetroFramework.Controls.MetroTextBox.MetroTextButton CancelButton;
+#pragma warning restore CS0108 // “Form1.CancelButton”隐藏继承的成员“Form.CancelButton”。如果是有意隐藏，请使用关键字 new。
         private MetroFramework.Controls.MetroTextBox.MetroTextButton OKButton;
         private MetroFramework.Controls.MetroToggle SavePassWord;
         private MetroFramework.Controls.MetroLabel metroLabel1;

@@ -14,3 +14,4 @@ D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\bin\Debug\Newtonsoft.Json.dll
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.csprojResolveAssemblyReference.cache
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.dll
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.pdb
+C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3Master\obj\Debug\TThaoyueBF3Master.csprojResolveAssemblyReference.cache
