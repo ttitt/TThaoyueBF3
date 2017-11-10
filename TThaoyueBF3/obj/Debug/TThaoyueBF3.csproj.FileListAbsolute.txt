@@ -14,22 +14,6 @@ c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\De
 c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3.exe.config
 c:\users\tt\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.Main.resources
 C:\Users\TT\documents\visual studio 2017\Projects\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.csprojResolveAssemblyReference.cache
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3.exe.config
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3.exe
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3.pdb
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\bin\Debug\MetroFramework.Design.dll
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\bin\Debug\MetroFramework.dll
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\bin\Debug\MetroFramework.Fonts.dll
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\bin\Debug\Newtonsoft.Json.dll
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3Master.dll
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\bin\Debug\Newtonsoft.Json.xml
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.csprojResolveAssemblyReference.cache
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.Form1.resources
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.Main.resources
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.Properties.Resources.resources
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.csproj.GenerateResource.Cache
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.exe
-C:\Users\TT\Desktop\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.pdb
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3\bin\Debug\TThaoyueBF3.exe.config
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.exe
 D:\WinX\Desktop\TThaoyueBF3\TThaoyueBF3\obj\Debug\TThaoyueBF3.pdb
